@@ -278,7 +278,7 @@ jobs:
           git status --porcelain -- "$SCAN_PATH" || true
 
       - name: Force change for PR creation
-        run: echo "Triggered at $(date)" > codemender-trigger.txt
+        run: echo "Triggered at $(date)" > codemender-trigger2.txt
 
       - name: Open Remediation Pull Request
         id: pr
