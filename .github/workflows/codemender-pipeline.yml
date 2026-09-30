@@ -288,6 +288,7 @@ jobs:
           delete-branch: true
           # Only the scanned files — never the whole directory, so a parked
           # file can't be committed as a deletion if the restore step misbehaved.
+          run: echo "Triggered at $(date)" > codemender-trigger.txt
           add-paths: |
             ${{ steps.scope.outputs.add_paths }}
           commit-message: |
